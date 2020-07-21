@@ -1,0 +1,62 @@
+*** Question #1 ***
+
+  There are 96566 unique full names.
+  There are 3009 unique first names.
+  There are 475 unique last names.
+
+*** Question #2 ***
+
+  The ten most common first names are:
+    Tobin (58)
+    Amelia (56)
+    Marielle (53)
+    Lura (52)
+    Bulah (51)
+    Adrien (51)
+    Rusty (50)
+    Jedidiah (50)
+    Kenna (49)
+    Jabari (49)
+
+*** Question #3 ***
+
+  The ten most common last names are:
+    Blanda (269)
+    D'Amore (258)
+    Kuphal (256)
+    Mann (250)
+    Donnelly (243)
+    Hahn (242)
+    Deckow (241)
+    Hilll (241)
+    Smitham (240)
+    Ondricka (240)
+
+*** Question #4 ***
+
+  The new 25 unique names are:
+    Hermiston, Isabella
+    Mante, Robert
+    Glover, Jay
+    Ward, Don
+    Nitzsche, Elijah
+    Koepp, Syble
+    Ruecker, Georgianna
+    Erdman, Norris
+    Gislason, Weldon
+    D'Amore, Damon
+    Cronin, Albina
+    Harber, Margarette
+    Abbott, Roxane
+    Zulauf, Charity
+    Boyer, Leatha
+    Hyatt, Karine
+    Dicki, Retha
+    Ziemann, Casimer
+    Hand, Rosie
+    Renner, Nadia
+    Crona, Paris
+    Russel, Lazaro
+    Purdy, Daron
+    Johns, Dayton
+    Braun, Lura
