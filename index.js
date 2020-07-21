@@ -34,18 +34,22 @@ async function countNames(reference, list){
     return (namesRank)
 }
 
-function firstQuestion(){
-    console.log("*** Question #1 ***\n")
+function getUniques(){
     uniqueFullname = getUnique(fullname)
     uniqueFirstname = getUnique(firstname)
     uniqueLastname = getUnique(lastname)
+}
+
+async function firstQuestion(){
+    console.log("*** Question #1 ***\n")
+    await getUniques()
     console.log("  There are " + uniqueFullname.length + " unique full names.");
     console.log("  There are " + uniqueFirstname.length + " unique first names.");
     console.log("  There are " + uniqueLastname.length + " unique last names.");
 }
 
 function secondQuestion(namesRank){
-    console.log("*** Question #2 ***\n")
+    console.log("\n*** Question #2 ***\n")
     console.log("  The ten most common first names are:")
 
     for(let i = 0; i < 10; i++){
@@ -54,7 +58,7 @@ function secondQuestion(namesRank){
 }
 
 function thirdQuestion(namesRank){
-    console.log("*** Question #3 ***\n")
+    console.log("\n*** Question #3 ***\n")
     console.log("  The ten most common last names are:")
 
     for(let i = 0; i < 10; i++){
@@ -69,7 +73,7 @@ function isFullnameUnique(firstname, lastname, uniquesFullname){
 }
 
 function forthQuestion(){
-    console.log("*** Question #4 ***/n")
+    console.log("\n*** Question #4 ***\n")
     let i = 0;
     let uniquesFullnames = []
     while (uniquesFullnames.length < 25) {
@@ -80,7 +84,6 @@ function forthQuestion(){
             })
         i++
     }
-    console.log(uniquesFullnames)
     console.log("  The new 25 unique names are:")
     console.log("    " + uniquesFullnames[24].lastname + ", " + uniquesFullnames[0].firstname)
     for(let i = 0; i < 24; i++){
@@ -93,9 +96,10 @@ fs.readFile('./test-data-10-exp-5.list','utf8', async (err, data) => {
         if (line[0] !== ' ')
         {
             name = line.split(' -- ')
-            fullname.push(name[0]),
-            firstname.push(name[0].split(',')[1]),
-            lastname.push(name[0].split(',')[0])
+            fullname.push(name[0])
+            name = name[0].split(', ')
+            firstname.push(name[1])
+            lastname.push(name[0])
         }
     })
 
